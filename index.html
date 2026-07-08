@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alika Wirawan — Desainer Visual &amp; Produk</title>
+<meta name="description" content="Portofolio Alika Wirawan, desainer visual dan produk berbasis di Jakarta.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ink-cursor" id="inkCursor" aria-hidden="true"></div>
+
+<!-- ===== NAV ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">A/W</span>
+      <span class="brand-name">Alika Wirawan</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#karya" data-idx="01">Karya</a>
+      <a href="#tentang" data-idx="02">Tentang</a>
+      <a href="#proses" data-idx="03">Proses</a>
+      <a href="#kontak" data-idx="04">Kontak</a>
+    </nav>
+    <a href="#kontak" class="nav-cta">Mulai Proyek</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <p class="eyebrow">Jurnal Desain — Edisi 07</p>
+    <h1 class="hero-title">
+      Merancang identitas visual yang <em>terasa</em>&nbsp;seperti pulang.
+    </h1>
+    <p class="hero-lede">
+      Saya Alika, desainer produk &amp; visual asal Jakarta. Sepuluh tahun terakhir
+      dihabiskan menerjemahkan warisan budaya menjadi sistem desain digital
+      yang dipakai jutaan orang setiap hari.
+    </p>
+    <div class="hero-actions">
+      <a href="#karya" class="btn btn-primary">Lihat Karya Terpilih</a>
+      <a href="#kontak" class="btn btn-ghost">Ngobrol Bareng</a>
+    </div>
+    <dl class="hero-stats">
+      <div><dt>32</dt><dd>Proyek Rampung</dd></div>
+      <div><dt>9</dt><dd>Tahun Praktik</dd></div>
+      <div><dt>14</dt><dd>Klien Global</dd></div>
+    </dl>
+  </div>
+
+  <div class="hero-seal" aria-hidden="true">
+    <svg viewBox="0 0 240 240" class="seal-svg" id="sealSvg">
+      <circle cx="120" cy="120" r="112" class="seal-ring"></circle>
+      <path id="sealTextPath" d="M120,20 A100,100 0 1 1 119.9,20" fill="none"></path>
+      <text class="seal-text">
+        <textPath href="#sealTextPath" startOffset="0%">ALIKA WIRAWAN • STUDIO RASA • JAKARTA • </textPath>
+      </text>
+      <g class="seal-motif">
+        <path d="M120 70 C140 90 140 110 120 130 C100 110 100 90 120 70 Z"></path>
+        <path d="M120 130 C140 150 140 170 120 190 C100 170 100 150 120 130 Z"></path>
+        <circle cx="120" cy="120" r="6"></circle>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>IDENTITAS VISUAL</span><span>◆</span>
+    <span>DESAIN PRODUK</span><span>◆</span>
+    <span>SISTEM DESAIN</span><span>◆</span>
+    <span>ART DIRECTION</span><span>◆</span>
+    <span>IDENTITAS VISUAL</span><span>◆</span>
+    <span>DESAIN PRODUK</span><span>◆</span>
+    <span>SISTEM DESAIN</span><span>◆</span>
+    <span>ART DIRECTION</span><span>◆</span>
+  </div>
+</div>
+
+<!-- ===== WORK ===== -->
+<section class="work" id="karya">
+  <div class="section-head">
+    <p class="section-label">02 — Karya Terpilih</p>
+    <h2 class="section-title">Setiap proyek, satu bab cerita.</h2>
+  </div>
+
+  <div class="filter-bar" id="filterBar">
+    <button class="filter-btn is-active" data-filter="all">Semua</button>
+    <button class="filter-btn" data-filter="identitas">Identitas</button>
+    <button class="filter-btn" data-filter="produk">Produk Digital</button>
+    <button class="filter-btn" data-filter="cetak">Cetak</button>
+  </div>
+
+  <div class="work-grid" id="workGrid"><!-- injected by script.js --></div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="tentang">
+  <div class="about-grid">
+    <div class="about-figure">
+      <div class="about-frame">
+        <span class="frame-caption">Studio Rasa, Kemang — Jakarta</span>
+      </div>
+    </div>
+    <div class="about-copy">
+      <p class="section-label">03 — Tentang</p>
+      <h2 class="section-title">Desain yang berakar, bukan sekadar tren.</h2>
+      <p>
+        Saya percaya identitas visual paling kuat lahir dari kejujuran akan
+        asalnya. Studio Rasa saya dirikan tahun 2018 untuk membantu merek —
+        dari UMKM hingga perusahaan teknologi — menemukan bahasa visual yang
+        jujur pada akarnya, namun tetap relevan di layar modern.
+      </p>
+      <p>
+        Sebelum itu, saya memimpin tim desain di dua startup fintech Asia
+        Tenggara, membangun sistem desain yang dipakai lintas puluhan produk.
+      </p>
+      <ul class="skill-list">
+        <li><span>Identitas Merek</span><span class="skill-bar"><i style="--w:95%"></i></span></li>
+        <li><span>Desain Sistem UI</span><span class="skill-bar"><i style="--w:90%"></i></span></li>
+        <li><span>Tipografi</span><span class="skill-bar"><i style="--w:85%"></i></span></li>
+        <li><span>Art Direction</span><span class="skill-bar"><i style="--w:80%"></i></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="process" id="proses">
+  <div class="section-head">
+    <p class="section-label light">04 — Proses</p>
+    <h2 class="section-title light">Empat tahap, satu ritme kerja.</h2>
+  </div>
+  <ol class="process-list">
+    <li>
+      <span class="process-index">01</span>
+      <h3>Menyelami</h3>
+      <p>Riset mendalam terhadap merek, pasar, dan audiens sebelum satu garis pun digambar.</p>
+    </li>
+    <li>
+      <span class="process-index">02</span>
+      <h3>Merangkai</h3>
+      <p>Eksplorasi konsep secara luas — palet, tipografi, dan bahasa visual dibentuk paralel.</p>
+    </li>
+    <li>
+      <span class="process-index">03</span>
+      <h3>Menajamkan</h3>
+      <p>Iterasi ketat bersama klien hingga setiap elemen punya alasan untuk ada.</p>
+    </li>
+    <li>
+      <span class="process-index">04</span>
+      <h3>Menyerahkan</h3>
+      <p>Sistem, dokumentasi, dan aset lengkap — siap dipakai tim internal tanpa saya.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="kontak">
+  <div class="contact-inner">
+    <p class="section-label">05 — Kontak</p>
+    <h2 class="section-title">Punya proyek di kepala?</h2>
+    <p class="contact-lede">Ceritakan sedikit, saya balas dalam 1–2 hari kerja.</p>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="field">
+        <label for="name">Nama</label>
+        <input type="text" id="name" name="name" required>
+        <span class="field-error" data-for="name"></span>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <span class="field-error" data-for="email"></span>
+      </div>
+      <div class="field">
+        <label for="message">Ceritakan proyek Anda</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <span class="field-error" data-for="message"></span>
+      </div>
+      <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="brand-mark">A/W</span>
+    <p>© <span id="year"></span> Studio Rasa. Dirancang &amp; dibangun dengan teliti di Jakarta.</p>
+    <div class="footer-links">
+      <a href="#" aria-label="Instagram">IG</a>
+      <a href="#" aria-label="LinkedIn">LI</a>
+      <a href="#" aria-label="Behance">BE</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
